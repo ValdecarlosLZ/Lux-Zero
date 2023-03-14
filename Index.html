@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    
+    <style>
+        /* header {   
+        } */
+
+         body {
+            background-image: url(src/assets/Nebula.png);
+            background-attachment: fixed;
+        } 
+
+        #logoI {
+            height: 80px;
+            width: 80px;
+            z-index: 7;
+            /* box-shadow: white 3px 3px 8px; */
+            background: none;
+        }
+
+        #logoI::content {
+            height: 100%;
+            border-right: 1px solid black;
+        }
+
+        #nome {
+            size: 4px;
+            margin-left: 30%;
+            margin-top: -8%;
+            
+            text-shadow: 4px 4px 5px rgba(83, 36, 158, 0.404);
+            position: relative;
+            display: block;
+            z-index: 2;
+            max-width: 27%;
+            max-height: 27%;
+            
+            font-size: 72px;
+            background: -webkit-linear-gradient(#890681,#890681, #5b0992, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            
+            /* }
+
+        #nome.border { */
+            border-right: 1px solid black;
+            padding-right: 22%;
+        }
+
+        .header {
+            padding-top: 3%;
+        }
+
+        .login {
+            border-radius: 6px 6px;
+            background-color: rgb(88, 13, 116);
+            color: rgb(183, 151, 196);
+            display: block;
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 20px 3px 20px;
+            max-width: fit-content;
+            font-family: Baskerville Old Face;
+            margin-left: 93%;
+            margin-top: -6%;
+            z-index: 5;
+
+        }
+
+        .login:hover:hover {
+            background-color: rgb(43, 35, 54);
+        }
+
+        .cadastro {
+            border-radius: 6px 6px;
+            background-color: rgb(88, 13, 116);
+            color: rgb(183, 151, 196);
+            display: block;
+            text-decoration: none;
+            padding: 3px 20px 3px 20px;
+            margin-top: 4px;
+            max-width: fit-content;
+            font-size: 13px;
+            font-family: Baskerville Old Face;
+            margin-left: 92%;
+            z-index: 5;
+        }
+
+        .cadastro:hover {
+            background-color: rgb(43, 35, 54);
+        }
+
+        /* size */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #5b5b5b;
+            opacity: 0.7;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #201f1f;
+            border-radius: 3px;
+            opacity: 0.1;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #32235e;
+        }
+
+        #baseHeader {
+            background-color: black;
+
+            border-top: 2px solid black;
+
+            opacity: 0.5;
+        }        
+
+        /* h1 {
+            font-size: 72px;
+            background: -webkit-linear-gradient(#890681,#890681, #5b0992, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div>
+                <img src="src/assets/Logo inteira.png" id="logoI">
+            </div>
+            <div>
+                <!---<img src="Nome-02.png" id="nome">---><Center><h1 id="nome" data-value="Louzers">Louzers</h1></Center>
+            </div>     
+            <div id="botoes"> 
+                <a href="Login.html" type="button" name="entrar" class="login" >Login</a>
+                <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
+            </div>
+            <div class="header">
+            </div>
+            <div id="baseHeader">
+            </div>
+        </nav>
+    </header>
+    <script src="src/assets/Resources/script.js"></script>
+</body>
+
+</html>
