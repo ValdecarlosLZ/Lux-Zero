@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 //COOKIE
 
@@ -20,36 +21,56 @@ if (count($_COOKIE) > 0) {
     echo "Cookie OFF";
 }
 
-    //excluir
+//excluir
 // setcookie('Caos', '', time() - 86400);
 
 // $_SESSION 
 
-session_start();
 if (isset($_SESSION['user'])) {
     echo "Welcome {$_SESSION['user']}!";
 } else {
     echo 'Novo por aqui?';
-    $_SESSION['user'] = 'LOUZ';
+    $_SESSION['user'] = 'LOUZER';
+    $_SESSION['password'] = '12345678';
 }
 
-    //excluir
+//excluir
 // unset($_SESSION['user']);
 // session_destroy();
 
 //VALIDAÇÃO
 
-$user = $_POST["user"];
-$password = $_POST["password"];
+
+$user = $_POST['user'];
+$password = $_POST['password'];
+// $nome = $_POST["nome"];
+// $email = $_POST["email"];
 $erro = FALSE;
 
-if (empty($user) or strstr($user, '')) {
-    print_r("Inseira seu nome de usuário");
+if (strlen($user) < 5) {
+    echo "O <b>Usuário</b> deve conter mais de 5 caracteres. <br>";
     $erro = true;
+}
+if (strlen($password) < 8) {
+    echo "A <b>Senha</b> deve conter mais de 8 digitos. <br>";
+    $erro = true;
+}
+if (!$erro) {
+    echo "Dados digitados corretamente";
+    // echo '<br> <input href="Index.html" type="button" name="entrar" value="entrar">';
+    header('Location: ../../Index.html');
+    exit;
 }
 
-if (empty($password) or strlen($password) < 8) {
-    print_r("Insira uma senha valida (maior que 8 digitos)");
-    $erro = true;
-}
+// if(empty($nome)OR strstr($nome,' ')){
+//     echo "Insira seu <strong>nome</strong>. <br>";
+//     $erro = true;
+// }
+
+// if(strlen($email)< 8 OR !strstr($email,'@') OR empty($email)){
+//     echo "Digite um <strong>Email</strong> valido. <br>";
+//     $erro = true;
+// }
+
+
 ?>

@@ -153,20 +153,22 @@
                     <h3 id="log" data-value="Login     ">Lux Zero</h3>
                 </div>
                 <!-- <h4 data-value="Login">Login</h4> -->
-                <form name="request" action="Ups/processo.php" onsubmit="return validateForm()" method="post">
+                <form name="request" action="src/Ups/processo.php" onsubmit="return validateForm()" method="post">
                     <div id="ordem">
 
                         <input type="text" name="user" placeholder="Usuário" id="usuario" required>
                         <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8">
                     </div>
                     <div id="botao">
-                        <a type="button" href="Index.html" class="button"  method="post" value="Logar" onclick="login">Logar</a>
+                        <input type="submit" href="window.open('../../Index.html', 'new-window');" class="button"  name="logar" value="Logar" onclick="login">
                         <br>
                     </div>
+                    <!-- <input type="submit" value="logar" name="logar"> -->
                 </form>
                 <div id="like">
                     <a href="Cadastro.html" id="like" target="_blank">Cadastre-se</a>
                 </div>
+                
             </div>
         </nav>
     </header>
