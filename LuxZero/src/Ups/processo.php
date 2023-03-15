@@ -50,10 +50,14 @@ $erro = FALSE;
 if (strlen($user) < 5) {
     echo "O <b>Usuário</b> deve conter mais de 5 caracteres. <br>";
     $erro = true;
+    header('Location: ../../Login.html');
+    exit;
 }
 if (strlen($password) < 8) {
     echo "A <b>Senha</b> deve conter mais de 8 digitos. <br>";
     $erro = true;
+    header('Location: ../../Login.html');
+    exit;
 }
 if (!$erro) {
     echo "Dados digitados corretamente";
