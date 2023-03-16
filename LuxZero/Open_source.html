@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-<Title>START</Title>
+  <Title>START</Title>
   <style>
     body {
 
@@ -15,35 +15,37 @@
     }
 
     #Z {
-      font-family: Old Face;
-      color: rgb(199, 197, 197);
-      margin-left: 900px;
-      margin-top: 50px;
-      transform: rotate(17deg);
-      font-size: 150px;
+      /* font-family: Old Face;
+      color: rgb(199, 197, 197);*/
+      margin-left: 860px;
       /* text-shadow: 5px 0 rgb(199, 197, 197), -5px 0 rgb(199, 197, 197), 0 5px rgb(199, 197, 197),rgb(199, 197, 197)5px rgb(199, 197, 197),
-               3px 3px rgb(199, 197, 197), -3px -3px rgb(199, 197, 197), 3px -3px rgb(199, 197, 197), -3px 3px rgb(199, 197, 197); */
-
-      animation: go-back 1s alternate;
+               3px 3px rgb(199, 197, 197), -3px -3px rgb(199, 197, 197), 3px -3px rgb(199, 197, 197), -3px 3px rgb(199, 197, 197); 
+      z-index: 2;*/
+      display: block;
     }
 
     #L {
-      font-family: Old Face;
-      color: rgb(199, 197, 197);
       margin-left: 700px;
-      transform: rotate(345deg);
-      margin-bottom: 90px;
       /* text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0),rgb(0, 0, 0)2px rgb(0, 0, 0),
                1px 1px rgb(0, 0, 0), -1px -1px rgb(0, 0, 0), 1px -1px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0); */
-      font-size: 160px;
+      z-index: 1;
+      position: relative;
+      display: block;
     }
 
     #Fumaça {
-      font-size: 700px;
-      margin-left: 32%;
-      margin-bottom: 895px;
+      /* margin-left: 32%; */
+      
+      position: absolute;
+      display: block;
+      z-index: 0;
+    }
 
-      opacity: 0;
+    #logoInt {
+      position: absolute;
+      padding: 0%;
+      display: block;
+      
     }
   </style>
   <script>
@@ -54,14 +56,16 @@
 <body translate="no">
   <header>
     <nav>
-      <div id="L">
-        <h1> L </h1>
-      </div>
-      <div id="Z">
-        <h1> Z </h1>
-      </div>
-      <div id="Fumaça">
-        <img src="src/assets/Circulo_Roxo.png">
+      <div id="logoInt">
+        <div id="L">
+          <img src="src/assets/L.png" alt="" width="150px" height="180px">
+        </div>
+        <div id="Z">
+          <img src="src/assets/Z.png" alt="" width="150px" height="180px">
+        </div>
+        <div id="Fumaça">
+          <img src="src/assets/Circulo_Roxo.png">
+        
       </div>
     </nav>
   </header>
