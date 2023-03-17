@@ -17,6 +17,8 @@ if (isset($_COOKIE[$cookie_name])) {
 
 if (count($_COOKIE) > 0) {
     echo "Cookie ON";
+    header('Location: ../../404.html');
+    exit;
 } else {
     echo "Cookie OFF";
 }
