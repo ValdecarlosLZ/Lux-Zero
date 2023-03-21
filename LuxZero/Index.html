@@ -6,13 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    
+
     <style>
-        header {  
-            background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/NebulaHead.png?token=GHSAT0AAAAAAB7ZWHUJVI4BG4J5FEZLXIN2ZATBFOA);
-            opacity: 0.5;
+         *{
+            margin: 0;
+            padding: 0;
         }
-        header::before{
+        header {
+            background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/NebulaHead.png?token=GHSAT0AAAAAAB7ZWHUJVI4BG4J5FEZLXIN2ZATBFOA);
+            opacity: 1;
+            padding: 3%;
+            border-bottom: 2px solid black;
+
+        }
+
+        /* header::after {
             content: " ";
             position: absolute;
             top: 0;
@@ -20,16 +28,17 @@
             width: 100%;
             height: 100%;
             background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/NebulaHead.png?token=GHSAT0AAAAAAB7ZWHUJVI4BG4J5FEZLXIN2ZATBFOA);
-            opacity: 0.5;
-        }
-        nav{
             opacity: 1;
-        }
+            z-index: -1;
+        }  */
 
-         body {
-            background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Lux-Zero/main/LuxZero/src/assets/Nebula.png?token=GHSAT0AAAAAAB7ZWHUISQXLY7TINNMIDHQIZATBHKQ);
+
+        body {
+            background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Nebula.png);
             background-attachment: fixed;
-        } 
+            margin: 0;
+            padding: 0;
+        }
 
         #logoI {
             height: 80px;
@@ -50,20 +59,20 @@
             size: 4px;
             margin-left: 30%;
             margin-top: -2.5%;
-            
+
             text-shadow: 6px 4px 5px rgba(83, 36, 158, 0.404);
             position: relative;
             display: block;
             z-index: 2;
             max-width: 27%;
             max-height: 27%;
-            
+
             font-size: 72px;
-            background: -webkit-linear-gradient(#890681,#890681, #5b0992, #15091d);
+            background: -webkit-linear-gradient(#890681, #890681, #5b0992, #15091d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            
-            
+
+
             /* }
 
         #nome.border { */
@@ -72,7 +81,8 @@
         }
 
         .header {
-            padding-top: 3%;
+            padding-top: 5%;
+
         }
 
         .login {
@@ -138,13 +148,7 @@
             background: #32235e;
         }
 
-        #baseHeader {
-            background-color: black;
 
-            border-top: 2px solid black;
-
-            opacity: 0.5;
-        }        
 
         /* h1 {
             font-size: 72px;
@@ -158,24 +162,22 @@
 
 <body translate="no">
     <header>
-        <nav>
-
-            <div>
-                <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Logo%20inteira.png?token=GHSAT0AAAAAAB7ZWHUJL4ZCHSYQX7MSR5KQZATA5OQ" id="logoI">
-            </div>
-            <div>
-                <!---<img src="Nome-02.png" id="nome">---><Center><h1 id="nome" data-value="Lux Zero">Lux Zero</h1></Center>
-            </div>     
-            <div id="botoes"> 
-                <a href="Login.html" type="button" name="entrar" class="login" >Login</a>
-                <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
-            </div>
-            <div class="header">
-            </div>
-            <div id="baseHeader">
-            </div>
-        </nav>
+        <div>
+            <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Logo%20inteira.png" id="logoI">
+        </div>
+        <div>
+            <!---<img src="Nome-02.png" id="nome">--->
+            <Center>
+                <h1 id="nome" data-value="Lux Zero">Lux Zero</h1>
+            </Center>
+        </div>
+        <div id="botoes">
+            <a href="Login.html" type="button" name="entrar" class="login">Login</a>
+            <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
+        </div>
     </header>
+    <nav>
+    </nav>
     <script src="src/assets/Resources/script.js"></script>
 </body>
 
