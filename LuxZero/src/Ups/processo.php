@@ -1,8 +1,28 @@
 <?php
 session_start();
 
+$usuario_padrao = "LOUZER";
+$senhapadrao    = 12345678;
+
+$user = $_POST['user'];
+$password = $_POST['password'];
 //COOKIE
 
+if ($user == $usuario_padrao && $password == $senhapadrao){
+echo "ENTROU PROCESSO";
+
+    header('Location: ../../Index.html');
+    exit;
+}
+else if ($user < 5 && $password && $password < 8){
+echo "Usuario e senha incorretos";
+ header('Location: ../../Login.html?ERRO=true');
+    exit;}
+
+    function function_alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
+/*
 $cookie_name = "Caos";
 $cookie_value = "36242400";
 setcookie($cookie_name, $cookie_value, time() + 86400);
@@ -17,6 +37,8 @@ if (isset($_COOKIE[$cookie_name])) {
 
 if (count($_COOKIE) > 0) {
     echo "Cookie ON";
+    header('Location: ../../404.html');
+    exit;
 } else {
     echo "Cookie OFF";
 }
@@ -26,45 +48,15 @@ if (count($_COOKIE) > 0) {
 
 // $_SESSION 
 
-if (isset($_SESSION['user'])) {
-    echo "Welcome {$_SESSION['user']}!";
-} else {
-    echo 'Novo por aqui?';
-    $_SESSION['user'] = 'LOUZER';
-    $_SESSION['password'] = '12345678';
-}
-
 //excluir
 // unset($_SESSION['user']);
 // session_destroy();
 
 //VALIDAÇÃO
 
-
-$user = $_POST['user'];
-$password = $_POST['password'];
 // $nome = $_POST["nome"];
 // $email = $_POST["email"];
 $erro = FALSE;
-
-if (strlen($user) < 5) {
-    echo "O <b>Usuário</b> deve conter mais de 5 caracteres. <br>";
-    $erro = true;
-    header('Location: ../../Login.html?ERRO=true');
-    exit;
-}
-if (strlen($password) < 8 && $password) {
-    echo "A <b>Senha</b> deve conter mais de 8 digitos. <br>";
-    $erro = true;
-    header('Location: ../../Login.html?ERRO=true');
-    exit;
-}
-if (!$erro) {
-    echo "Dados digitados corretamente";
-    // echo '<br> <input href="Index.html" type="button" name="entrar" value="entrar">';
-    header('Location: ../../Index.html');
-    exit;
-}
 
 // if(empty($nome)OR strstr($nome,' ')){
 //     echo "Insira seu <strong>nome</strong>. <br>";
@@ -76,5 +68,5 @@ if (!$erro) {
 //     $erro = true;
 // }
 
-
+*/
 ?>
