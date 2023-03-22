@@ -8,15 +8,17 @@
     <title>ERRO!!!!</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         body {
             background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Nebula.png);
             background-attachment: fixed;
         }
-        h2{
+
+        h2 {
             text-align: center;
             font-family: Doctor Glitch;
             margin-top: 0;
@@ -44,18 +46,23 @@
             text-shadow: 8px 8px 8px #631166, 4px 4px 5px #9e1aa5;
         }
     </style>
+    <script>
+            // setInterval(onload, 10000);
+        function voltar() {
+            // window.location.reload();
+            window.location.href = "../LuxZero/Login.html";
+        }
 
+    </script>
 </head>
 
-<body translate="no">
+<body translate="no" onload="setInterval('voltar()',3000)">
 
     <h2>ERROR!</h2>
     <h1 data-value="404">404</h1>
     <h3 data-value="Page not found">Page not found</h3>
 
-
     <script src="src/assets/Resources/script3.js"></script>
-    <script src="src/assets/Resources/script4.js"></script>
 
 </body>
 
