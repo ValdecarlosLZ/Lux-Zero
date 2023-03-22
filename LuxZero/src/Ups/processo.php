@@ -7,44 +7,21 @@ $senhapadrao    = 12345678;
 $user = $_POST['user'];
 $password = $_POST['password'];
 //COOKIE
-
+ function function_alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
 if ($user == $usuario_padrao && $password == $senhapadrao){
-echo "ENTROU PROCESSO";
+    function_alert("ENTROU COM SUCESSO");
 
     header('Location: ../../Index.html');
     exit;
 }
-else if ($user < 5 && $password && $password < 8){
-echo "Usuario e senha incorretos";
+else 
+function_alert("FALHA NO LOGIN DADOS INCORRETOS");
  header('Location: ../../Login.html?ERRO=true');
-    exit;}
-
-    function function_alert($msg) {
-        echo "<script type='text/javascript'>alert('$msg');</script>";
-    }?>
-
-<?php
-
-if ($_POST)
-{
-    $user == $usuario_padrao && $password == $senhapadrao;
-
-    if ($user)
-    {
-    ?>
-        <div class="sucesso">Login efetuado com sucesso</div>
-echo  "<script>alert('Login efetuado com sucesso');</script>";
-    <?php
-    }
-    else
-    {
-    ?>
-<div class="erro"><script>location.reload(forceGet)</script></div>
-    <?php
-    }
-}
-
-?>
+    exit;
+    
+   
 /*
 $cookie_name = "Caos";
 $cookie_value = "36242400";
@@ -92,3 +69,4 @@ $erro = FALSE;
 // }
 
 */
+?>
