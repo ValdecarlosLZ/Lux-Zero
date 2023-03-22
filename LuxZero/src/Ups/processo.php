@@ -33,6 +33,7 @@ if ($_POST)
     {
     ?>
         <div class="sucesso">Login efetuado com sucesso</div>
+echo  "<script>alert('Login efetuado com sucesso');</script>";
     <?php
     }
     else
