@@ -18,6 +18,10 @@ else if ($user < 5 && $password && $password < 8){
 echo "Usuario e senha incorretos";
  header('Location: ../../Login.html?ERRO=true');
     exit;}
+
+    function function_alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
 /*
 $cookie_name = "Caos";
 $cookie_value = "36242400";
