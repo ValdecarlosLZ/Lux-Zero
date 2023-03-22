@@ -7,20 +7,27 @@ $senhapadrao = 12345678;
 $user = $_POST['user'];
 $password = $_POST['password'];
 //COOKIE
-function function_alert($msg)
-{
-    echo "<script type='text/javascript'>alert('$msg');</script>";
-}
+
+
+
 if ($user == $usuario_padrao && $password == $senhapadrao) {
-    function_alert("ENTROU COM SUCESSO");
     header('Location: ../../Index.html');
     exit;
 } else
-    function_alert("FALHA NO LOGIN DADOS INCORRETOS");
 header('Location: ../../404.html?ERRO=true');
 exit;
 
 
+// echo '<script type="text/javascript">
+// function login() {
+//     if ("") {
+//         alert("Acesso autorizado");
+//     }
+//     else {
+//         alert("Acesso NEGADO");
+//     }
+// }
+// </script>';
 /*
 $cookie_name = "Caos";
 $cookie_value = "36242400";
