@@ -21,7 +21,30 @@ echo "Usuario e senha incorretos";
 
     function function_alert($msg) {
         echo "<script type='text/javascript'>alert('$msg');</script>";
+    }?>
+
+<?php
+
+if ($_POST)
+{
+    $user == $usuario_padrao && $password == $senhapadrao;
+
+    if ($user)
+    {
+    ?>
+        <div class="sucesso">Login efetuado com sucesso</div>
+echo  "<script>alert('Login efetuado com sucesso');</script>";
+    <?php
     }
+    else
+    {
+    ?>
+<div class="erro"><script>location.reload(forceGet)</script></div>
+    <?php
+    }
+}
+
+?>
 /*
 $cookie_name = "Caos";
 $cookie_value = "36242400";
@@ -69,4 +92,3 @@ $erro = FALSE;
 // }
 
 */
-?>
