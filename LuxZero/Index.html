@@ -8,11 +8,11 @@
     <title>HOME</title>
 
     <style>
-
-         *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         header {
             background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/NebulaHead.png?token=GHSAT0AAAAAAB7ZWHUJVI4BG4J5FEZLXIN2ZATBFOA);
             opacity: 1;
@@ -44,13 +44,8 @@
 
         #nome {
             size: 4px;
-
             margin-left: 30%;
             margin-top: -2.5%;
-           margin-left: 25%;
-            margin-top: -2.5%;
-            
-
             text-shadow: 6px 4px 5px rgba(83, 36, 158, 0.404);
             position: relative;
             display: block;
@@ -58,11 +53,7 @@
             max-width: 27%;
             max-height: 27%;
             font-size: 72px;
-
             background: -webkit-linear-gradient(#890681, #890681, #5b0992, #15091d);
-
-            background: -webkit-linear-gradient(#890681,#890681, #5b0992, #15091d);
-
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             border-right: 1px solid black;
@@ -73,7 +64,7 @@
 
             padding-top: 5%;
 
-            padding-top: 3%;          
+            padding-top: 3%;
 
 
         }
@@ -115,7 +106,6 @@
 
         .cadastro:hover {
             background-color: rgb(43, 35, 54);
-            margin-bottom: 0;
         }
 
         /* size */
@@ -142,16 +132,29 @@
             background: #32235e;
         }
 
+        .menu {
+            list-style: none;
+            border: 1px solid black;
+            float: left;
+        }
 
+        .menu li {
+            position: relative;
+            float: left;
+            border-right: 1px solid black;
+        }
+        .menu li a {
+            color: #890681;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body translate="no">
     <header>
-
         <div>
             <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Logo%20inteira.png" id="logoI">
-       </div>
+        </div>
         <div>
             <!---<img src="Nome-02.png" id="nome">--->
             <Center>
@@ -162,25 +165,36 @@
             <a href="Login.html" type="button" name="entrar" class="login">Login</a>
             <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
         </div>
-
-        <nav>
-
-            <div>
-                <img src="src/assets/Logo inteira.png" id="logoI">
-            </div>
-            <div>
-                <!---<img src="Nome-02.png" id="nome">---><Center><h1 id="nome" data-value="LZ                ">Lux Zero</h1></Center>
-            </div>     
-            <div id="botoes"> 
-                <a href="Login.html" type="button" name="entrar" class="login" >Login</a>
-                <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
-            </div>
-            <div class="header">
-            </div>
-            <div id="baseHeader">
-            </div>
-        </nav>
     </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="">HOME</a></li>
+            <li><a href="">SKINS</a></li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <li><a href="">ITENS</a></li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <li><a href="">JOGOS</a></li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </ul>
+    </nav>
     <script src="src/assets/Resources/script.js"></script>
 </body>
 
