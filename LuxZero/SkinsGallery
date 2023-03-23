@@ -8,6 +8,10 @@
     <title>Skins</title>
 
     <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
         body {
             background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Nebula.png);
             background-attachment: fixed;
